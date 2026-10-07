@@ -1,0 +1,6 @@
+{
+  "name": "Saad Video Studio",
+  "description": "Professional offline desktop video editing application for Windows with multi-track timeline, speed curves, keyframing, chroma key, audio mixing, and FFmpeg exporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

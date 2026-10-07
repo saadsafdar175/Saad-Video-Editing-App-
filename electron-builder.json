@@ -1,0 +1,41 @@
+{
+  "appId": "com.saadvideo.studio",
+  "productName": "Saad Video Studio",
+  "directories": {
+    "output": "dist-electron"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "extraResources": [
+    {
+      "from": "electron/ffmpeg",
+      "to": "ffmpeg",
+      "filter": ["**/*"]
+    }
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Saad Video Studio"
+  },
+  "portable": {
+    "artifactName": "SaadVideoStudio-Portable-${version}.exe"
+  }
+}
